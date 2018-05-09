@@ -16,7 +16,7 @@ auth()->attempt($credentials);
 ```
 simply changes based on the config variable in the auth.php and .env file
 
-to  avoid accidental security vulnaribilties 3 things should match :
+to  avoid accidental security vulnaribilties 3 conditions should match before you can login with any password :
 
 in your .env file :
 ```
@@ -24,13 +24,13 @@ in your .env file :
 2 - APP_DEBUG=true
 ```
 
-3 - in the `auth.php` file change:
+in the `auth.php` file change:
 ```php
-  'driver' => 'eloquent',
+'driver' => 'eloquent',
 ```
 to
 ```php
-  'driver' => 'eloquentAnyPass', // for eloquent user provider
+3 -   'driver' => 'eloquentAnyPass', // for eloquent user provider
 ```
   or
 ```php
