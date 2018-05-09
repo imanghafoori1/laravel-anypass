@@ -3,6 +3,7 @@
 namespace Imanghafoori\AnyPass;
 
 use Illuminate\Auth\EloquentUserProvider as LaravelUserProvider;
+use Illuminate\Contracts\Auth\Authenticatable as UserContract;
 
 class AnyPassEloquentUserProvider extends LaravelUserProvider
 {
