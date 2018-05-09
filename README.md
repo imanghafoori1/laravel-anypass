@@ -36,7 +36,9 @@ to
 ```php
   'driver' => 'databaseAnyPass', // for database user provider
 ```
-  
+
+![image](https://user-images.githubusercontent.com/6961695/39836227-eb69c812-53e7-11e8-9dd9-4cb6d1df7964.png)
+  
   that way it is very unlikely to accidentally misconfigure your app to accept any wrong password in production.
 
 # Installtion
