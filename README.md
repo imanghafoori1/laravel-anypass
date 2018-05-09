@@ -1,4 +1,5 @@
-# laravel-anypass
+# Laravel Anypass
+
 It is always painful to remember and type in the correct password in the login form while you are in development...
 
 It would be nice to be able to login with any password in local environment and only by changing the .env variables switch to real password checking. 
@@ -34,3 +35,9 @@ to
 ```
   
   that way it is very unlikely to accidentally misconfigure your app to accept any wrong password in production.
+
+# Installtion
+
+```
+composer require imanghafoori/laravel-anypass
+```
