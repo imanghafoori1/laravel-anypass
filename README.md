@@ -37,9 +37,10 @@ to
   'driver' => 'databaseAnyPass', // for database user provider
 ```
 
-![image](https://user-images.githubusercontent.com/6961695/39836227-eb69c812-53e7-11e8-9dd9-4cb6d1df7964.png)
+![image](https://user-images.githubusercontent.com/6961695/39836414-8a173288-53e8-11e8-8a4e-bc42dc7becc5.png)
+
   
-  that way it is very unlikely to accidentally misconfigure your app to accept any wrong password in production.
+That way it is very unlikely to accidentally misconfigure your app to accept any wrong password in production.
 
 # Installtion
 
