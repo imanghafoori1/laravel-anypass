@@ -1,5 +1,8 @@
 # Laravel Anypass
 
+![anypass_header](https://user-images.githubusercontent.com/6961695/39835544-afbb2178-53e5-11e8-8f25-51717c21a8d2.png)
+
+
 It is always painful to remember and type in the correct password in the login form while you are in development...
 
 It would be nice to be able to login with any password in local environment and only by changing the .env variables switch to real password checking. 
