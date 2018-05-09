@@ -13,8 +13,8 @@ class AnyPassServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
     }
+
     /**
      * Register any application services.
      *
@@ -22,8 +22,13 @@ class AnyPassServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        \Auth::provider('AnyPass', function ($app, array $config) {
-            return new AnyPassUserProvider($app['hash'] ,$config["model"]);
+        \Auth::provider('eloquentAnyPass', function ($app, array $config) {
+            return new AnyPassEloquentUserProvider($app['hash'], $config["model"]);
+        });
+
+        \Auth::provider('databaseAnyPass', function ($app, array $config) {
+            $connection = $app['db']->connection();
+            return new AnyPassDatabaseUserProvider($connection, $app['hash'], $config['table']);
         });
     }
 }

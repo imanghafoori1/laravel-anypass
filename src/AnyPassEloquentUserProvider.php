@@ -2,9 +2,9 @@
 
 namespace Imanghafoori\AnyPass;
 
-use Illuminate\Auth\EloquentUserProvider;
+use Illuminate\Auth\EloquentUserProvider as LaravelUserProvider;
 
-class AnyPassUserProvider extends EloquentUserProvider
+class AnyPassEloquentUserProvider extends LaravelUserProvider
 {
 
     /**
@@ -16,10 +16,10 @@ class AnyPassUserProvider extends EloquentUserProvider
      */
     public function validateCredentials(UserContract $user, array $credentials)
     {
-        if (env('APP_DEBUG') == true && env('APP_ENV') === 'local')
+        if (env('APP_DEBUG') === true && env('APP_ENV') === 'local')
         {
             return true;
         }
-        parent::validateCredentials($user, $credentials);
+        return parent::validateCredentials($user, $credentials);
     }
 }
