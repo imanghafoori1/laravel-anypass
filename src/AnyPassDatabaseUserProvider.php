@@ -16,7 +16,7 @@ class AnyPassDatabaseUserProvider extends DatabaseUserProvider
      */
     public function validateCredentials(UserContract $user, array $credentials)
     {
-        if (env('APP_DEBUG') === true && env('APP_ENV') === 'local')
+        if (env('APP_DEBUG') === true && env('APP_ENV') === 'local' && env('ANY_PASS', true))
         {
             return true;
         }
