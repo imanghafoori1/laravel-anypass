@@ -16,15 +16,15 @@ auth()->attempt($credentials);
 ```
 simply changes based on the config variable in the auth.php and .env file
 
-to  avoid accidental security vulnaribilties 3 conditions should match before you can login with any password :
+to  avoid accidental security vulnaribilties, 3 conditions should match before you can login with any password :
 
-in your .env file :
+first, in your .env file you must:
 ```
 1 - APP_ENV=local
 2 - APP_DEBUG=true
 ```
 
-in the `auth.php` file change:
+and in the `auth.php` file you must change:
 ```php
 'driver' => 'eloquent',
 ```
