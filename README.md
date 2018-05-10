@@ -24,6 +24,9 @@ first, in your .env file you must:
 2 - APP_DEBUG=true
 ```
 
+![image](https://user-images.githubusercontent.com/6961695/39836414-8a173288-53e8-11e8-8a4e-bc42dc7becc5.png)
+
+
 and in the `auth.php` file you must change:
 ```php
 'driver' => 'eloquent',
@@ -37,7 +40,7 @@ to
   'driver' => 'databaseAnyPass', // for database user provider
 ```
 
-![image](https://user-images.githubusercontent.com/6961695/39836414-8a173288-53e8-11e8-8a4e-bc42dc7becc5.png)
+
 
   
 That way it is very unlikely to accidentally misconfigure your app to accept any wrong password in production.
