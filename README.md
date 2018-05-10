@@ -42,6 +42,9 @@ to
   
 That way it is very unlikely to accidentally misconfigure your app to accept any wrong password in production.
 
+### Note:
+If for any reason, you want to keep your `APP_ENV=local` and `APP_DEBUG=true` in production, you can set `ANY_PASS=false` to forcefully turn it off and accept real passwords.
+
 # Installtion
 
 ```
