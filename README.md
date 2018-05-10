@@ -24,16 +24,16 @@ first, in your .env file you must:
 2 - APP_DEBUG=true
 ```
 
+3 -
+
 ![image](https://user-images.githubusercontent.com/6961695/39836414-8a173288-53e8-11e8-8a4e-bc42dc7becc5.png)
 
 
 and in the `auth.php` file you must change:
+
+
 ```php
-'driver' => 'eloquent',
-```
-to
-```php
-3 -   'driver' => 'eloquentAnyPass', // for eloquent user provider
+   'driver' => 'eloquentAnyPass', // for eloquent user provider
 ```
   or
 ```php
