@@ -54,6 +54,14 @@ If for any reason, you want to keep your `APP_ENV=local` and `APP_DEBUG=true` in
 composer require imanghafoori/laravel-anypass
 ```
 
+
+(For laravel 5.4 and below: you must add the service provider into the `config/app.php`)
+```php
+\Imanghafoori\AnyPass\AnyPassServiceProvider::class
+```
+
+
+
 ### :exclamation: Security
 If you discover any security related issues, please email imanghafoori1@gmail.com instead of using the issue tracker.
 
