@@ -10,11 +10,12 @@ It would be nice to be able to login with any password in local environment and 
 (This means you do not need change your application code, when you deploy your app to production.)
 
 
-Actually the behaviour of the
-```php
-auth()->attempt($credentials); 
-```
-simply changes based on the config variable in the auth.php and .env file
+Actually the behaviour of the `auth()->attempt($credentials); ` simply changes based on the config variable in the auth.php and .env file!
+
+
+#### Performance hit: 
+
+This package is only a few lines (about 20 lies) of code with no overhead. Take a look at the code!
 
 
 ## Config
@@ -73,7 +74,7 @@ If you discover any security related issues, please email imanghafoori1@gmail.co
 As always if you found this package useful and you want to encourage us to maintain and work on it. Just press the star button to declare your willing.
 
 
-#### More from the author:
+### More from the author:
 
 https://github.com/imanghafoori1/laravel-terminator
 
