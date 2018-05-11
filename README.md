@@ -16,6 +16,9 @@ auth()->attempt($credentials);
 ```
 simply changes based on the config variable in the auth.php and .env file
 
+
+## Config
+
 to  avoid accidental security vulnaribilties, 3 conditions should match before you can login with any password :
 
 first, in your .env file you must:
