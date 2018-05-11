@@ -7,7 +7,7 @@ It is always painful to remember and type in the correct password in the login f
 
 It would be nice to be able to login with any password in local environment and only by changing the .env variables switch to real password checking. 
 
-This means you do not need change you application code at all when you deploy your app to production, to accept real passwords.
+(This means you do not need change your application code, when you deploy your app to production.)
 
 
 Actually the behaviour of the
