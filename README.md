@@ -15,7 +15,7 @@ Actually the behaviour of the `auth()->attempt($credentials); ` simply changes b
 
 #### Performance hit: 
 
-This package is only a few lines (about 20 lies) of code with no overhead. Take a look at the code!
+This package is only a few lines (about 20 lines) of code with no almost overhead. Take a look at the code!
 
 
 ## Config
