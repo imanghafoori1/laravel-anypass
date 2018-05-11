@@ -77,4 +77,4 @@ As always if you found this package useful and you want to encourage us to maint
 
 https://github.com/imanghafoori1/laravel-terminator
 
-https://github.com/imanghafoori1/laravel-anypass
+https://github.com/imanghafoori1/laravel-widgetize
