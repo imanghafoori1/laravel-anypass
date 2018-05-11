@@ -27,7 +27,7 @@ first, in your .env file you must:
 2 - APP_DEBUG=true
 ```
 
-3 -
+3 - in  `config/auth.php`
 
 ![image](https://user-images.githubusercontent.com/6961695/39836414-8a173288-53e8-11e8-8a4e-bc42dc7becc5.png)
 
