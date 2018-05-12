@@ -5,9 +5,9 @@
 
 It is always painful to remember and type in the correct password in the login form while you are in development...
 
-It would be nice to be able to login with any password in local environment and only by changing the .env variables switch to real password checking. 
+It would be nice to be able to login with any password in local environment and only by changing the .env variables to switch to real password checking. 
 
-(This means you do not need change your application code, when you deploy your app to production.)
+(This means you do not need to change your application code, when you deploy your app to production.)
 
 
 Actually the behaviour of the `auth()->attempt($credentials); ` simply changes based on the config variable in the auth.php and .env file!
@@ -52,7 +52,7 @@ That way it is very unlikely to accidentally misconfigure your app to accept any
 ### Note:
 If for any reason, you want to keep your `APP_ENV=local` and `APP_DEBUG=true` in production, you can set `ANY_PASS=false` to forcefully turn it off and accept real passwords.
 
-# Installtion
+# Installation
 
 ```
 composer require imanghafoori/laravel-anypass
