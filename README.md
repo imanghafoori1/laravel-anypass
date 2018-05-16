@@ -20,35 +20,23 @@ This package is only a few lines (about 20 lines) of code with almost no overhea
 
 ## Config
 
-to  avoid accidental security vulnaribilties, 3 conditions should match before you can login with any password :
+To  avoid accidental security vulnerabilities, 3 conditions should match before you can login with any password :
 
-first, in your .env file you must:
+in your .env file you must:
 ```
-1 - APP_ENV=local
+1 - APP_ENV=local  // or APP_ENV=testing
 2 - APP_DEBUG=true
+3 - ANY_PASS=true
 ```
-
-3 - in  `config/auth.php`
-
-![image](https://user-images.githubusercontent.com/6961695/39836414-8a173288-53e8-11e8-8a4e-bc42dc7becc5.png)
-
-  or
-```php
-  'driver' => 'databaseAnyPass', // for database user provider
-```
-
-
-
   
-That way it is very unlikely to accidentally misconfigure your app to accept any wrong password in production.
+That way it is very unlikely to accidentally misconfigure your app to accept any wrong password on production server.
 
-### Note:
-If for any reason, you want to keep your `APP_ENV=local` and `APP_DEBUG=true` in production, you can set `ANY_PASS=false` to forcefully turn it off and accept real passwords.
+We highly recommend to take a look to the source code.
 
 # Installation
 
 ```
-composer require imanghafoori/laravel-anypass
+composer require-dev imanghafoori/laravel-anypass
 ```
 
 
