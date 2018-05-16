@@ -15,12 +15,12 @@ Actually the behaviour of the `auth()->attempt($credentials); ` simply changes b
 
 #### Performance hit: 
 
-This package is only a few lines (about 20 lines) of code with almost no overhead. Take a look at the code!
+This package is only a few lines (about 20 lines) of code with almost no overhead.
 
 
 ## Config
 
-To  avoid accidental security vulnerabilities, 3 conditions should match before you can login with any password :
+To avoid accidental security vulnerabilities, 3 conditions should match before you can login with any password :
 
 in your .env file you must:
 ```
@@ -28,10 +28,14 @@ in your .env file you must:
 2 - APP_DEBUG=true
 3 - ANY_PASS=true
 ```
-  
+ 
 That way it is very unlikely to accidentally misconfigure your app to accept any wrong password on production server.
 
 We highly recommend to take a look to the source code.
+
+## Note 
+
+You can not login with an invalid username or an invalid api token. Only the password checking is by-passed.
 
 # Installation
 
