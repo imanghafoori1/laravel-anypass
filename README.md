@@ -36,7 +36,7 @@ We highly recommend to take a look to the source code.
 # Installation
 
 ```
-composer require-dev imanghafoori/laravel-anypass
+composer require --dev imanghafoori/laravel-anypass
 ```
 
 
