@@ -17,7 +17,13 @@ Actually the behaviour of the `auth()->attempt($credentials); ` simply changes b
 
 This package is only a few lines (about 20 lines) of code with almost no overhead.
 
-
+It is also completely safe not to install it on production. Since it is a dev only dependency in your composer.json file.
+```js
+  "require-dev": {
+       "imanghafoori/laravel-anypass": "dev-master",
+        ...
+    },
+```
 ## Config
 
 To avoid accidental security vulnerabilities, 3 conditions should match before you can login with any password :
