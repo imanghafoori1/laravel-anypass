@@ -7,12 +7,11 @@ use Illuminate\Contracts\Auth\Authenticatable as UserContract;
 
 class AnyPassEloquentUserProvider extends LaravelUserProvider
 {
-
     /**
-     * Validate a user against the given credentials.
+     * Overrides the parent method to skip real password validation and assume the password is just correct.
      *
-     * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
-     * @param  array  $credentials
+     * @param  \Illuminate\Contracts\Auth\Authenticatable $user
+     * @param  array $credentials
      * @return bool
      */
     public function validateCredentials(UserContract $user, array $credentials)
