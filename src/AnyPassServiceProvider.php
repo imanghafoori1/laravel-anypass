@@ -42,12 +42,22 @@ class AnyPassServiceProvider extends ServiceProvider
      */
     private function properConfig()
     {
-        return env('APP_DEBUG') === true && in_array(env('APP_ENV'), ['local', 'testing']) && env('ANY_PASS', false) === true;
+        return env('APP_DEBUG') === true && $this->appEnvIsSafe() && env('ANY_PASS', false) === true;
     }
 
     private function changeUsersDriver()
     {
         $driver = config()->get('auth.providers.users.driver');
-        config()->set('auth.providers.users.driver', $driver.'AnyPass');
+        if (in_array($driver, ['eloquent', 'database',])) {
+            config()->set('auth.providers.users.driver', $driver.'AnyPass');
+        }
+    }
+
+    /**
+     * @return bool
+     */
+    private function appEnvIsSafe()
+    {
+        return in_array(env('APP_ENV'), ['local', 'testing']);
     }
 }
