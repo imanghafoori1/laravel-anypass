@@ -50,19 +50,24 @@ composer require --dev imanghafoori/laravel-anypass
 ```
 
 
-(For laravel 5.4 and below: you must add the service provider into the `config/app.php`)
+(For laravel 5.4 and below: Instead of adding the service provider in the config/app.php file, you can add the following code to your app/Providers/AppServiceProvider.php file, within the register() method:
+
 ```php
-\Imanghafoori\AnyPass\AnyPassServiceProvider::class
+public function register()
+{
+    if ($this->app->environment() === 'local' || $this->app->environment() === 'testing') {
+        $this->app->register(\Imanghafoori\AnyPass\AnyPassServiceProvider::class);
+    }
+    // ...
+}
 ```
-
-
 
 ### :exclamation: Security
 If you discover any security related issues, please email imanghafoori1@gmail.com instead of using the issue tracker.
 
 
 ### :star: Your Stars Make Us Do More :star:
-As always if you found this package useful and you want to encourage us to maintain and work on it. Just press the star button to declare your willing.
+As always if you found this package useful and you want to encourage us to maintain and work on it, Please press the star button to declare your willing.
 
 
 ### More from the author:
