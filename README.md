@@ -22,7 +22,7 @@ It is also completely safe not to install it on production. Since it is a dev on
   "require-dev": {
        "imanghafoori/laravel-anypass": "dev-master",
         ...
-    },
+  },
 ```
 ## Config
 
@@ -72,6 +72,14 @@ As always if you found this package useful and you want to encourage us to maint
 
 ### More from the author:
 
-https://github.com/imanghafoori1/laravel-terminator
+A minimal yet powerful package to give you opportunity to refactor your controllers.
 
-https://github.com/imanghafoori1/laravel-widgetize
+- https://github.com/imanghafoori1/laravel-terminator
+
+==========================
+
+A minimal yet powerful package to give a better structure and caching opportunity for your laravel apps.
+
+- https://github.com/imanghafoori1/laravel-widgetize
+
+
