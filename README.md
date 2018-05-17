@@ -17,14 +17,14 @@ Actually the behaviour of the `auth()->attempt($credentials); ` simply changes b
 
 This package is only a few lines (about 20 lines) of code with almost no overhead.
 
-It is also completely safe not to install it on production. Since it is a dev only dependency in your composer.json file.
+It is also completely safe to avoid installing it on production without changing your code. Since it is a dev only dependency in your composer.json file.
 ```js
   "require-dev": {
        "imanghafoori/laravel-anypass": "dev-master",
         ...
   },
 ```
-## Config
+## Config 
 
 To avoid accidental security vulnerabilities, 3 conditions should match before you can login with any password :
 
@@ -39,7 +39,7 @@ That way it is very unlikely to accidentally misconfigure your app to accept any
 
 We highly recommend to take a look to the source code.
 
-## Note 
+## :heartbeat: Note 
 
 You can not login with an invalid username or an invalid api token. Only the password checking is by-passed.
 
@@ -70,16 +70,21 @@ If you discover any security related issues, please email imanghafoori1@gmail.co
 As always if you found this package useful and you want to encourage us to maintain and work on it, Please press the star button to declare your willing.
 
 
-### More from the author:
+### More from the author: :gem:
 
 A minimal yet powerful package to give you opportunity to refactor your controllers.
 
 - https://github.com/imanghafoori1/laravel-terminator
 
-==========================
+------------------
 
 A minimal yet powerful package to give a better structure and caching opportunity for your laravel apps.
 
 - https://github.com/imanghafoori1/laravel-widgetize
 
 
+-------------------
+
+A simple package that lets you easily impersonate your users.
+
+- https://github.com/imanghafoori1/laravel-MasterPass
