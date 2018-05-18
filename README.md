@@ -43,7 +43,7 @@ We highly recommend to take a look to the source code.
 
 You can not login with an invalid username or an invalid api token. Only the password checking is by-passed.
 
-# Installation
+## :fire: Installation
 
 ```
 composer require --dev imanghafoori/laravel-anypass
@@ -70,21 +70,21 @@ If you discover any security related issues, please email imanghafoori1@gmail.co
 As always if you found this package useful and you want to encourage us to maintain and work on it, Please press the star button to declare your willing.
 
 
-### More from the author: :gem:
+### More from the author:
 
-A minimal yet powerful package to give you opportunity to refactor your controllers.
+ :gem: A minimal yet powerful package to give you opportunity to refactor your controllers.
 
 - https://github.com/imanghafoori1/laravel-terminator
 
 ------------------
 
-A minimal yet powerful package to give a better structure and caching opportunity for your laravel apps.
+ :gem: A minimal yet powerful package to give a better structure and caching opportunity for your laravel apps.
 
 - https://github.com/imanghafoori1/laravel-widgetize
 
 
 -------------------
 
-A simple package that lets you easily impersonate your users.
+ :gem: A simple package that lets you easily impersonate your users.
 
 - https://github.com/imanghafoori1/laravel-MasterPass
