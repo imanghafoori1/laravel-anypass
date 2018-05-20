@@ -8,9 +8,9 @@
 
 It is always painful to remember and type in the correct password in the login form while you are in development...
 
-It would be nice to be able to login with any password in local environment and only by changing the .env variables to switch to real password checking. 
+It would be nice to be able to login with any password in local environment and only by changing the .env variables(not the application code), switch to: "real password checking". 
 
-(This means you do not need to change your application code, when you deploy your app to production.)
+(This means you do not need to change your application code, when you deploy your app to production while you enjoy the ease in local environments.)
 
 
 Actually the behaviour of the `auth()->attempt($credentials); ` simply changes based on the config variable in the auth.php and .env file!
