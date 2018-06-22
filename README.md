@@ -3,7 +3,7 @@
 ![anypass_header](https://user-images.githubusercontent.com/6961695/40175717-4fa063de-59ee-11e8-8124-fbb53c8ba653.png)
 
 [![Latest Stable Version](https://poser.pugx.org/imanghafoori/laravel-anypass/v/stable)](https://packagist.org/packages/imanghafoori/laravel-anypass)
-<a href="https://scrutinizer-ci.com/g/imanghafoori1/laravel-anypass"><img src="https://img.shields.io/scrutinizer/g/imanghafoori1/laravel-anypass.svg?style=flat-square" alt="Quality Score"></img></a>
+<a href="https://scrutinizer-ci.com/g/imanghafoori1/laravel-anypass"><img src="https://img.shields.io/scrutinizer/g/imanghafoori1/laravel-anypass.svg?style=round-square" alt="Quality Score"></img></a>
 [![Build Status](https://scrutinizer-ci.com/g/imanghafoori1/laravel-anypass/badges/build.png?b=master)](https://scrutinizer-ci.com/g/imanghafoori1/laravel-anypass/build-status/master)
 [![License](https://poser.pugx.org/imanghafoori/laravel-anypass/license)](https://packagist.org/packages/imanghafoori/laravel-anypass)
 
