@@ -58,6 +58,15 @@ class AnyPassServiceProvider extends ServiceProvider
      */
     private function appEnvIsSafe()
     {
-        return in_array(env('APP_ENV'), ['local', 'testing']);
+        $csv = env('ANY_PASS_ENVIRONMENTS', 'local,testing');
+
+        $allowedEnvironments = collect(explode(',', $csv))
+            ->map(function ($string) {
+                return trim($string);
+            })
+            ->filter()
+            ->toArray();
+
+        return in_array(env('APP_ENV'), $allowedEnvironments);
     }
 }
