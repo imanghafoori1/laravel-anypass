@@ -46,6 +46,12 @@ That way it is very unlikely to accidentally misconfigure your app to accept any
 
 We highly recommend to take a look to the source code.
 
+By default, Anypass will only work if the `APP_ENV` is set to local or testing. You can override this by defining `ANY_PASS_ENVIRONMENTS` in your .env file, and setting the value to a comma-separated string of environments. For example:
+```
+ANY_PASS=true
+ANY_PASS_ENVIRONMENTS="local,testing,acceptance"
+```
+
 ## :heartbeat: Note 
 
 You can not login with an invalid username or an invalid api token. Only the password checking is by-passed.
