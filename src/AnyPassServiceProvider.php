@@ -23,7 +23,7 @@ class AnyPassServiceProvider extends ServiceProvider
     public function register()
     {
         \Auth::provider('eloquentAnyPass', function ($app, array $config) {
-            return new AnyPassEloquentUserProvider($app['hash'], $config["model"]);
+            return new AnyPassEloquentUserProvider($app['hash'], $config['model']);
         });
 
         \Auth::provider('databaseAnyPass', function ($app, array $config) {
@@ -48,7 +48,7 @@ class AnyPassServiceProvider extends ServiceProvider
     private function changeUsersDriver()
     {
         $driver = config()->get('auth.providers.users.driver');
-        if (in_array($driver, ['eloquent', 'database',])) {
+        if (in_array($driver, ['eloquent', 'database'])) {
             config()->set('auth.providers.users.driver', $driver.'AnyPass');
         }
     }
