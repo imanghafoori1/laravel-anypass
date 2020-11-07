@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Imanghafoori\AnyPassTests;
 
 use Imanghafoori\AnyPass\AnyPassServiceProvider;
@@ -8,7 +7,6 @@ use Imanghafoori\AnyPassTests\Dependencies\UserModel;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
-
     /**
      * @var \Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model
      */
@@ -26,8 +24,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            AnyPassServiceProvider::class
+            AnyPassServiceProvider::class,
         ];
     }
-
 }
