@@ -1,7 +1,11 @@
 vendor/
 node_modules/
 npm-debug.log
+/.idea
+/.vscode
+.phpunit.result.cache
 
+composer.lock
 # Laravel 4 specific
 bootstrap/compiled.php
 app/storage/
