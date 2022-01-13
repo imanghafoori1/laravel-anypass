@@ -41,6 +41,7 @@ in your .env file you must:
 1 - APP_ENV=local  // or APP_ENV=testing
 2 - APP_DEBUG=true
 3 - ANY_PASS=true
+4 - WRONG_ANY_PASS=wrong // any password is correct except this one.
 ```
  
 That way it is very unlikely to accidentally misconfigure your app to accept any wrong password on production server.
@@ -52,6 +53,8 @@ By default, Anypass will only work if the `APP_ENV` is set to local or testing. 
 ANY_PASS=true
 ANY_PASS_ENVIRONMENTS="local,testing,acceptance"
 ```
+
+- If you want to manually check the login form behaivour in case of a wrong password in local you can use the "1_Wrong_pass" string. (you CAN enter it in lowercase or uppercase and a combination of both like "1_WrOnG_Pass", and it would be considered as a wrong password.)
 
 ## :heartbeat: Note 
 
