@@ -17,6 +17,12 @@ class AnyPassEloquentUserProvider extends LaravelUserProvider
      */
     public function validateCredentials(UserContract $user, array $credentials)
     {
+        $plain = $credentials['password'];
+        
+        if ($plain === env('WRONG_ANY_PASS', '1_WRONG_pass')) {
+            return false;
+        }
+        
         return true;
     }
 }
