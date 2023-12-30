@@ -22,7 +22,8 @@
     },
     "require-dev": {
         "orchestra/testbench": "^4.0|^5.0|^6.0",
-        "laravel/legacy-factories": "^1.1"
+        "laravel/legacy-factories": "^1.1",
+        "imanghafoori/php-imports-analyzer": "^1.0.6"
     },
     "autoload-dev": {
         "psr-4": {
